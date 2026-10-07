@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ภาพการทำงานระบบ POS — Thai Aroi (มัลดีฟส์)</title>
+    <meta name="description" content="ภาพการทำงานจริงของระบบ POS ร้านอาหารไทยในมัลดีฟส์: ลูกค้าสั่งอาหารผ่านมือถือ บอร์ดแคชเชียร์เรียลไทม์ หน้าครัว เช็คบิลหลายสกุลเงิน ประวัติการเงิน หลังบ้านจัดการเมนู และระบบสต๊อก">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Sarabun', -apple-system, sans-serif;
+            background: #ffffff;
+            color: #1f2937;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        header { padding: 56px 0 32px; border-bottom: 1px solid #e5e7eb; }
+        .back { display: inline-block; color: #6b7280; text-decoration: none; font-size: 14px; margin-bottom: 16px; }
+        .back:hover { color: #1f2937; text-decoration: underline; }
+        h1 { font-size: 26px; font-weight: 700; }
+        .sub { color: #4b5563; margin-top: 8px; font-weight: 300; max-width: 760px; }
+        section { padding: 40px 0 0; }
+        h2 { font-size: 19px; font-weight: 700; margin-bottom: 6px; }
+        .step { color: #6b7280; font-size: 14px; margin-bottom: 16px; font-weight: 300; }
+        .shots { display: flex; flex-wrap: wrap; gap: 14px; align-items: flex-start; }
+        .shot { border: 1px solid #e5e7eb; border-radius: 6px; overflow: hidden; background: #f9fafb; flex: 1 1 300px; max-width: 100%; }
+        .shot.desktop { flex: 3 1 620px; }
+        .shot.mobile { flex: 1 1 220px; max-width: 300px; }
+        .shot img { width: 100%; height: auto; display: block; }
+        .shot figcaption { padding: 8px 12px; font-size: 12.5px; color: #6b7280; border-top: 1px solid #e5e7eb; background: #fff; }
+        footer { margin-top: 56px; border-top: 1px solid #e5e7eb; padding: 32px 0 48px; font-size: 14px; color: #6b7280; }
+        footer a { color: #1f2937; font-weight: 500; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a class="back" href="../">← กลับหน้ารวมผลงาน</a>
+            <h1>ภาพการทำงานระบบ POS — ร้านอาหารไทยในมัลดีฟส์ (Thai Aroi)</h1>
+            <p class="sub">ถ่ายจากระบบจริงที่ใช้งานอยู่ทุกวัน เรียงตามลำดับการทำงาน: ลูกค้าสั่งผ่านมือถือ บอร์ดแคชเชียร์รับและเปลี่ยนสถานะเรียลไทม์ หน้าครัวเห็นออเดอร์พร้อมโน้ต เช็คบิลหลายสกุลเงิน ประวัติการเงิน หลังบ้านจัดการเมนู และระบบสต๊อกตัดของอัตโนมัติ</p>
+        </header>
+
+        <section>
+            <h2>1. ฝั่งลูกค้า — เลือกภาษา ดูเมนู สั่งอาหาร</h2>
+            <p class="step">เปิดจากมือถือที่โต๊ะ เลือกภาษา (ไทย/อังกฤษ) เข้าเมนูแยกหมวด ราคาแสดง USD/MVR อัตโนมัติ</p>
+            <div class="shots">
+                <figure class="shot mobile"><img src="01-language-select.jpg" alt="หน้าเลือกภาษา"><figcaption>เลือกภาษาก่อนเข้าเมนู</figcaption></figure>
+                <figure class="shot mobile"><img src="02-menu-mobile.jpg" alt="หน้าเมนูบนมือถือ"><figcaption>เมนูบนมือถือ แยกหมวด ราคา USD/MVR</figcaption></figure>
+                <figure class="shot mobile"><img src="03-item-modal.jpg" alt="ป็อปอัพสั่งเมนู"><figcaption>ใส่โน้ตต่อรายการ เลือกจำนวน</figcaption></figure>
+                <figure class="shot mobile"><img src="05-cart.jpg" alt="ตะกร้าและยืนยันออเดอร์"><figcaption>ตะกร้า: เลือกทานที่ร้าน / กลับบ้าน / ดีลิเวอรี</figcaption></figure>
+                <figure class="shot mobile"><img src="06-order-status.jpg" alt="หน้าติดตามสถานะออเดอร์"><figcaption>ลูกค้าติดตามสถานะสด 3 ขั้น</figcaption></figure>
+            </div>
+        </section>
+
+        <section>
+            <h2>2. บอร์ดแคชเชียร์ — รับออเดอร์เรียลไทม์ เปลี่ยนสถานะ</h2>
+            <p class="step">ออเดอร์ใหม่โผล่ที่คอลัมน์ "รอรับ" ทันทีที่ลูกค้ากดสั่ง กดรับ → ย้ายไป "กำลังเสิร์ฟ" → เสิร์ฟ → เข้าคอลัมน์ "บิล"</p>
+            <div class="shots">
+                <figure class="shot desktop"><img src="08-pos-new-order.jpg" alt="บอร์ด POS แสดงออเดอร์ใหม่"><figcaption>ออเดอร์ใหม่โผล่ในคอลัมน์รอรับ พร้อมโน้ต "ไม่ใส่ถั่ว"</figcaption></figure>
+                <figure class="shot desktop"><img src="10-pos-serving.jpg" alt="บอร์ด POS หลังกดรับออเดอร์"><figcaption>กดรับแล้วย้ายไป "กำลังเสิร์ฟ" อัตโนมัติ</figcaption></figure>
+                <figure class="shot desktop"><img src="12-pos-billing.jpg" alt="บอร์ด POS คอลัมน์บิล"><figcaption>เสิร์ฟแล้วเข้าคอลัมน์บิล รอเช็คบิล</figcaption></figure>
+            </div>
+        </section>
+
+        <section>
+            <h2>3. เช็คบิล — หลายสกุลเงิน หลายช่องทางชำระ</h2>
+            <p class="step">ใบเสร็จคำนวณ Service Charge + Tax และแสดงรวมทั้ง USD/MVR รับเงินคิดเงินทอนอัตโนมัติ มีส่วนลด VIP และบิล $0 (ยืนยันด้วย PIN ผู้จัดการ)</p>
+            <div class="shots">
+                <figure class="shot desktop"><img src="13-checkout-modal.jpg" alt="หน้าเช็คบิลและใบเสร็จ"><figcaption>ใบเสร็จ + 4 ช่องทางชำระ + เงินทอน 2 สกุล</figcaption></figure>
+            </div>
+        </section>
+
+        <section>
+            <h2>4. หน้าครัว — เห็นโน้ตและระดับเผ็ดของทุกรายการ</h2>
+            <div class="shots">
+                <figure class="shot desktop"><img src="09-kitchen-order.jpg" alt="หน้าครัวแสดงออเดอร์"><figcaption>ครัวเห็นโน้ต "ไม่ใส่ถั่ว" ปุ่มพิมพ์ทีละรายการ และปริ้นอัตโนมัติได้</figcaption></figure>
+            </div>
+        </section>
+
+        <section>
+            <h2>5. ประวัติการเงิน — สรุปทุกช่องทางชำระ</h2>
+            <div class="shots">
+                <figure class="shot desktop"><img src="14-history.jpg" alt="หน้าประวัติการเงิน"><figcaption>ฟิลเตอร์วันที่/สถานะ/ประเภท + การ์ดสรุปแยกช่องทาง พิมพ์ใบเสร็จย้อนหลังได้</figcaption></figure>
+            </div>
+        </section>
+
+        <section>
+            <h2>6. หลังบ้าน — จัดการเมนู (3 ภาษา) และระบบสต๊อก</h2>
+            <p class="step">เพิ่ม/แก้เมนูและหมวดหมู่ ชื่อเก็บแยก 3 ภาษา (ไทย/EN/中) อัปโหลดรูปเอง ส่วนสต๊อกตัดของตามสูตรอาหารอัตโนมัติเมื่อขาย</p>
+            <div class="shots">
+                <figure class="shot desktop"><img src="15-admin.jpg" alt="หลังบ้านจัดการเมนู"><figcaption>หมวดหมู่ 3 ภาษา เพิ่ม/แก้/ลบเองได้</figcaption></figure>
+                <figure class="shot desktop"><img src="16-stock.jpg" alt="ระบบสต๊อก"><figcaption>สต๊อก: มูลค่ารวม เตือนของใกล้หมด Export/Import Excel</figcaption></figure>
+            </div>
+        </section>
+
+        <footer>
+            <p><a href="../">← กลับหน้ารวมผลงาน</a> · ติดต่อผ่าน <a href="https://fastwork.co/user/ekaniab" target="_blank" rel="noopener">Fastwork</a></p>
+        </footer>
+    </div>
+</body>
+</html>
