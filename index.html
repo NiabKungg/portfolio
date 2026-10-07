@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เอกณัฐ มีเดช — ผลงานพัฒนาเว็บไซต์และระบบสำหรับธุรกิจ</title>
+    <meta name="description" content="ผลงานจริงด้านพัฒนาเว็บไซต์บริษัท ระบบหลังบ้าน CMS ระบบ POS และแพลตฟอร์มอีเวนต์ ที่กำลังใช้งานอยู่จริง โดย เอกณัฐ มีเดช รับงานผ่าน Fastwork">
+    <meta property="og:title" content="ผลงานพัฒนาเว็บไซต์และระบบสำหรับธุรกิจ — เอกณัฐ มีเดช">
+    <meta property="og:description" content="เว็บบริษัทที่ทีมแก้เนื้อหาเองได้ ระบบ POS ที่ใช้งานจริงต่างประเทศ และแพลตฟอร์มอีเวนต์ — ทุกงานเป็นงานจริงที่ดูแลต่อเนื่อง">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Sarabun', -apple-system, sans-serif;
+            background: #ffffff;
+            color: #1f2937;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+        /* Header */
+        header { padding: 72px 0 40px; border-bottom: 1px solid #e5e7eb; }
+        h1 { font-size: 30px; font-weight: 700; letter-spacing: -0.01em; }
+        .role { font-size: 17px; color: #4b5563; margin-top: 6px; font-weight: 500; }
+        .intro { max-width: 720px; color: #4b5563; margin-top: 20px; font-weight: 300; font-size: 16px; }
+        .contact-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+        .btn {
+            display: inline-flex; align-items: center; gap: 8px;
+            padding: 10px 22px; border-radius: 6px;
+            font-size: 15px; font-weight: 600; text-decoration: none;
+            border: 1px solid #1f2937; transition: background 0.15s, color 0.15s;
+        }
+        .btn-primary { background: #1f2937; color: #ffffff; }
+        .btn-primary:hover { background: #374151; }
+        .btn-secondary { background: #ffffff; color: #1f2937; }
+        .btn-secondary:hover { background: #f3f4f6; }
+        .btn svg { width: 17px; height: 17px; }
+
+        /* Section */
+        section { padding: 56px 0 8px; }
+        h2 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+        .section-sub { color: #6b7280; font-size: 15px; margin-bottom: 28px; font-weight: 300; }
+
+        /* Work cards */
+        .work-list { display: flex; flex-direction: column; gap: 40px; }
+        .work-card { border: 1px solid #e5e7eb; border-radius: 6px; overflow: hidden; }
+        .work-media { display: block; }
+        .work-media img { width: 100%; height: auto; display: block; }
+        .work-body { padding: 24px 28px 28px; }
+        .work-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+        .work-title { font-size: 19px; font-weight: 700; }
+        .work-title a { color: #1f2937; text-decoration: none; }
+        .work-title a:hover { text-decoration: underline; }
+        .work-url { font-size: 13px; color: #6b7280; }
+        .work-client { font-size: 14px; color: #6b7280; margin-top: 2px; }
+        .work-desc { margin-top: 14px; font-size: 15px; color: #374151; font-weight: 300; }
+        .work-feats { margin-top: 14px; list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 24px; }
+        .work-feats li { display: flex; align-items: flex-start; gap: 8px; font-size: 14px; color: #374151; }
+        .work-feats svg { width: 16px; height: 16px; color: #059669; flex-shrink: 0; margin-top: 3px; }
+        .work-note { margin-top: 16px; font-size: 13px; color: #6b7280; }
+        @media (max-width: 640px) { .work-feats { grid-template-columns: 1fr; } }
+
+        /* POS text card */
+        .pos-tag {
+            display: inline-block; padding: 6px 12px; border-radius: 6px;
+            background: #f3f4f6; border: 1px solid #e5e7eb;
+            font-size: 13px; color: #374151; margin-bottom: 16px;
+        }
+
+        /* Capabilities */
+        .caps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 4px; }
+        .cap { border: 1px solid #e5e7eb; border-radius: 6px; padding: 18px 20px; display: flex; align-items: flex-start; gap: 12px; }
+        .cap svg { width: 20px; height: 20px; color: #059669; flex-shrink: 0; margin-top: 3px; }
+        .cap div { font-size: 15px; }
+        .cap b { display: block; font-weight: 600; }
+        .cap span { color: #6b7280; font-size: 13.5px; font-weight: 300; }
+        @media (max-width: 800px) { .caps { grid-template-columns: 1fr; } }
+
+        /* Footer */
+        footer { margin-top: 64px; border-top: 1px solid #e5e7eb; padding: 40px 0 56px; }
+        .foot-head { font-size: 18px; font-weight: 700; }
+        .foot-text { color: #4b5563; font-size: 15px; font-weight: 300; margin-top: 6px; max-width: 640px; }
+        .foot-contact { margin-top: 18px; display: flex; flex-direction: column; gap: 6px; font-size: 15px; }
+        .foot-contact a { color: #1f2937; text-decoration: none; font-weight: 500; }
+        .foot-contact a:hover { text-decoration: underline; }
+        .foot-contact span { color: #9ca3af; font-size: 13px; }
+        .copyright { margin-top: 32px; font-size: 13px; color: #9ca3af; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>เอกณัฐ มีเดช</h1>
+            <p class="role">พัฒนาเว็บไซต์และระบบสำหรับธุรกิจ</p>
+            <p class="intro">ผมพัฒนาเว็บไซต์บริษัทที่ทีมแก้เนื้อหาเองได้ผ่านหลังบ้าน ระบบ POS และแพลตฟอร์มขายตั๋ว พร้อมตั้งค่า SEO/AEO ให้ทั้ง Google และ AI Search เข้าใจเว็บ ทุกงานในหน้านี้เป็นงานจริงที่กำลังใช้งานอยู่ และดูแลต่อเนื่องหลังส่งมอบ</p>
+            <div class="contact-row">
+                <a class="btn btn-primary" href="https://fastwork.co/user/ekaniab" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                    Fastwork Profile
+                </a>
+                <a class="btn btn-secondary" href="https://github.com/NiabKungg" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                    GitHub
+                </a>
+                <a class="btn btn-secondary" href="mailto:niabbiekungxd@gmail.com">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+                    Email
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <h2>ผลงานที่กำลังใช้งานอยู่จริง</h2>
+                <p class="section-sub">เว็บไซต์และระบบต่อไปนี้เปิดเข้าดูได้จริง ทั้งหมดส่งมอบและดูแลโดยผม</p>
+
+                <div class="work-list">
+
+                    <article class="work-card">
+                        <a class="work-media" href="https://paopalmnursery.com/" target="_blank" rel="noopener">
+                            <img src="assets/work-paopalm.jpg" alt="เว็บไซต์ paopalmnursery.com หน้าแรก" loading="lazy">
+                        </a>
+                        <div class="work-body">
+                            <div class="work-head">
+                                <div class="work-title"><a href="https://paopalmnursery.com/" target="_blank" rel="noopener">paopalmnursery.com</a></div>
+                                <div class="work-url">paopalmnursery.com</div>
+                            </div>
+                            <p class="work-client">เว็บไซต์บริษัท + หลังบ้านจัดการเนื้อหา + AI แชตบอต — บจก. พี่เป้า อะโกเทค (แปลงเพาะต้นกล้าปาล์มน้ำมัน นครศรีธรรมราช)</p>
+                            <ul class="work-feats">
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>ทีมบริษัทแก้ข่าว บล็อก แกลเลอรี สินค้า เองผ่านหลังบ้าน พร้อมคู่มือ</span></li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>แชตบอต AI ตอบคำถามลูกค้าจากคลังความรู้ของเว็บ</span></li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>ตั้งค่า SEO/AEO ครบ (Schema, Sitemap, llms.txt)</span></li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>บนโดเมนจริง รันบน Vercel + Cloudflare + Vercel Blob</span></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="work-card">
+                        <a class="work-media" href="https://kantawatgarden.com/" target="_blank" rel="noopener">
+                            <img src="assets/work-kantawat.jpg" alt="เว็บไซต์ kantawatgarden.com หน้าแรก" loading="lazy">
+                        </a>
+                        <div class="work-body">
+                            <div class="work-head">
+                                <div class="work-title"><a href="https://kantawatgarden.com/" target="_blank" rel="noopener">kantawatgarden.com</a></div>
+                                <div class="work-url">kantawatgarden.com</div>
+                            </div>
+                            <p class="work-client">เว็บสินค้าและบริการ + CMS ให้เจ้าของแก้เอง — ไร่หญ้ากันตวัฒน์ (หญ้าปูสนาม/ต้นไม้/จัดสวน นครนายก)</p>
+                            <ul class="work-feats">
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>เจ้าของร้านแก้สินค้า บทความ แกลเลอรี เองผ่าน Sanity CMS เว็บอัปเดตในไม่กี่นาที</span></li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>SEO ท้องถิ่น + structured data ติดหน้าค้นหาจริง</span></li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>โหลดไว รองรับมือถือ ปุ่มโทร/LINE/WhatsApp/Messenger</span></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="work-card">
+                        <div class="work-body">
+                            <span class="pos-tag">ระบบภายในของร้าน — คลิปสาธิตจัดส่งได้ตามคำขอ</span>
+                            <div class="work-head">
+                                <div class="work-title">Thai Aroi POS — ระบบขายหน้าร้านและรับคำสั่งอาหาร</div>
+                            </div>
+                            <p class="work-client">ร้านอาหารไทย กรุงมาเล (Malé) มัลดีฟส์ — ใช้งานจริงทุกวัน</p>
+                            <ul class="work-feats">
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>ลูกค้าสั่งอาหารผ่านมือถือหลายภาษา ติดตามสถานะออเดอร์สด</span></li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>บอร์ด POS และหน้าครัวเห็นออเดอร์เรียลไทม์ (WebSocket)</span></li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>บิลหลายสกุลเงิน (USD/MVR) ภาษี ค่าบริการ ส่วนลดยืนยันด้วย PIN พิมพ์ใบเสร็จความร้อน 80 มม.</span></li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>ระบบสต๊อกตัดของอัตโนมัติ นำเข้า/ส่งออก Excel รายงานยอดขายรายวัน</span></li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>ผ่าน security audit มีรายงานอัปเกรดเวอร์ชันและดูแลต่อเนื่อง</span></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="work-card">
+                        <a class="work-media" href="https://utoevent.com/" target="_blank" rel="noopener">
+                            <img src="assets/work-utoevent.jpg" alt="เว็บไซต์ utoevent.com หน้าแรก" loading="lazy">
+                        </a>
+                        <div class="work-body">
+                            <div class="work-head">
+                                <div class="work-title"><a href="https://utoevent.com/" target="_blank" rel="noopener">utoevent.com</a></div>
+                                <div class="work-url">utoevent.com</div>
+                            </div>
+                            <p class="work-client">แพลตฟอร์มอีเวนต์ — บจก. สไวป จำกัด (ผู้จัดแฟนมีตติ้ง)</p>
+                            <ul class="work-feats">
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>เว็บหลักของอีเวนต์จริง (แฟนมีตติ้ง ต.ค. 2026) เปิดใช้งานแล้ว</span></li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>วางแผน 3 เฟส: e-Commerce → ระบบจองตั๋วแบบเลือกที่นั่ง + QR สแกนเข้างาน (กำลังพัฒนาเฟสต่อ)</span></li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>จัดทำเอกสาร SRS และข้อเสนอโครงการระดับบริษัทครบชุด</span></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2>สิ่งที่รับทำ</h2>
+                <p class="section-sub">ตั้งแต่วางโครงเว็บ พัฒนา ตั้งค่า SEO/AEO จนถึงดูแลหลังส่งมอบ</p>
+                <div class="caps">
+                    <div class="cap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg><div><b>เว็บไซต์ธุรกิจ + หลังบ้าน CMS</b><span>ทีมแก้เนื้อหาเองได้ พร้อมคู่มือและอบรม</span></div></div>
+                    <div class="cap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><div><b>SEO / AEO / GEO</b><span>Schema, Sitemap, llms.txt ให้ Google และ AI Search เข้าใจ</span></div></div>
+                    <div class="cap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><div><b>ระบบ POS / จอง / อีคอมเมิร์ซ</b><span>รับเงิน รายงาน สต๊อก ใช้งานจริงหน้าร้าน</span></div></div>
+                    <div class="cap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M2 14h2M20 14h2M15 13v2M9 13v2"/></svg><div><b>เชื่อม AI</b><span>แชตบอตตอบจากคลังความรู้ automation งานประจำ</span></div></div>
+                    <div class="cap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg><div><b>โยกย้ายระบบเดิมอย่างปลอดภัย</b><span>เว็บใหม่บนโครงเดิม ข้อมูลและระบบที่ใช้อยู่ไม่พัง</span></div></div>
+                    <div class="cap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.5 0 10-4.5 10-10S17.5 2 12 2 2 6.5 2 12s4.5 10 10 10z"/><path d="M12 6v6l4 2"/></svg><div><b>ดูแลต่อเนื่องหลังส่งมอบ</b><span>อัปเดต แก้ไข ต่อยอดฟีเจอร์ ตามการใช้งานจริง</span></div></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="foot-head">ติดต่อ / ปรึกษางาน</p>
+            <p class="foot-text">รับงานผ่านแพลตฟอร์ม Fastwork (มีระบบคุ้มครองการชำระเงินและใบเสนอราคาแบ่งงวด) สอบถามขอบเขตงานและราคาเบื้องต้นได้ที่โปรไฟล์ด้านล่าง</p>
+            <div class="foot-contact">
+                <a href="https://fastwork.co/user/ekaniab" target="_blank" rel="noopener">fastwork.co/user/ekaniab <span>— โปรไฟล์รับงานบน Fastwork</span></a>
+                <a href="https://github.com/NiabKungg" target="_blank" rel="noopener">github.com/NiabKungg <span>— ตัวอย่างโค้ดและเอกสารโครงการ</span></a>
+                <a href="mailto:niabbiekungxd@gmail.com">niabbiekungxd@gmail.com</a>
+            </div>
+            <p class="copyright">© 2026 เอกณัฐ มีเดช</p>
+        </div>
+    </footer>
+
+</body>
+</html>
