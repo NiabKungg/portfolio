@@ -63,6 +63,18 @@
         .work-feats li { display: flex; align-items: flex-start; gap: 8px; font-size: 14px; color: #374151; }
         .work-feats svg { width: 16px; height: 16px; color: #059669; flex-shrink: 0; margin-top: 3px; }
         .work-note { margin-top: 16px; font-size: 13px; color: #6b7280; }
+        .work-media--contain { background: #f9fafb; border-bottom: 1px solid #e5e7eb; }
+        .work-media--contain img { height: 460px; object-fit: contain; }
+        @media (max-width: 640px) { .work-media--contain img { height: 340px; } }
+
+        /* CMS section */
+        .cms-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+        .cms-card { border: 1px solid #e5e7eb; border-radius: 6px; padding: 22px 24px; }
+        .cms-card b { display: block; font-size: 16px; font-weight: 700; }
+        .cms-card .cms-for { display: block; font-size: 13.5px; color: #6b7280; margin-top: 2px; }
+        .cms-card p { font-size: 14px; color: #374151; font-weight: 300; margin-top: 12px; }
+        .cms-card p b { display: inline; font-size: 14px; font-weight: 600; }
+        @media (max-width: 800px) { .cms-grid { grid-template-columns: 1fr; } }
         @media (max-width: 640px) { .work-feats { grid-template-columns: 1fr; } }
 
         /* POS text card */
@@ -179,6 +191,41 @@
                     </article>
 
                     <article class="work-card">
+                        <div class="work-body">
+                            <span class="pos-tag">แพลตฟอร์มสำเร็จรูป — ใช้เริ่มงานร้านใหม่ได้เร็ว</span>
+                            <div class="work-head">
+                                <div class="work-title">แพลตฟอร์ม POS หลายภาษา (ไทย / อังกฤษ / จีน)</div>
+                            </div>
+                            <p class="work-client">แยกมาจากระบบ POS จริงที่ใช้งานอยู่ เป็นฐานเริ่มต้นสำหรับร้านอาหารรายใหม่</p>
+                            <ul class="work-feats">
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>รองรับ 3 ภาษาทั้งหน้าลูกค้าและหลังบ้าน ชื่อเมนูเก็บแยกตามภาษา</span></li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>บอร์ด POS เรียลไทม์ ระบบกะ ปิดยอดต่อแคชเชียร์ ประวัติการขาย</span></li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>บิลยืดหยุ่น ตั้งอัตราภาษี ค่าบริการ เทคอะเวย์ ดีลิเวอรี ได้เอง</span></li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Admin จัดการเมนู/หมวดหมู่ อัปโหลดรูป พร้อมใบเสร็จความร้อน</span></li>
+                            </ul>
+                            <p class="work-note">เพราะเป็นฐานที่ทดสอบกับงานจริงมาแล้ว งาน POS ร้านใหม่จึงเริ่มจากของที่ใช้ได้ ไม่ใช่เริ่มจากศูนย์</p>
+                        </div>
+                    </article>
+
+                    <article class="work-card">
+                        <a class="work-media work-media--contain" href="assets/work-pos-proposal.jpg" target="_blank" rel="noopener">
+                            <img src="assets/work-pos-proposal.jpg" alt="หน้าปกเอกสารข้อเสนอระบบ POS และการจัดการร้านอาหาร" loading="lazy">
+                        </a>
+                        <div class="work-body">
+                            <span class="pos-tag">เอกสารข้อเสนอตัวอย่าง — ฉบับเต็มส่งให้ดูได้ตามคำขอ</span>
+                            <div class="work-head">
+                                <div class="work-title">ข้อเสนอระบบ POS และการจัดการร้านอาหาร</div>
+                            </div>
+                            <p class="work-client">เอกสารข้อเสนอสำหรับร้านอาหารที่มีสาขาและต้องการตัวเลขจริงในการตัดสินใจ</p>
+                            <ul class="work-feats">
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>ยอดขายหน้าเว็บ ตัดสต๊อกตามสูตรอาหาร Food Cost</span></li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>ปิดกะเงินสด P/L ออโต้ รายงานสำหรับเจ้าของร้าน</span></li>
+                                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>เอกสารระดับบริษัท แนบประกอบการประชุมผู้บริหารได้ทันที</span></li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="work-card">
                         <a class="work-media" href="https://utoevent.com/" target="_blank" rel="noopener">
                             <img src="assets/work-utoevent.jpg" alt="เว็บไซต์ utoevent.com หน้าแรก" loading="lazy">
                         </a>
@@ -196,6 +243,30 @@
                         </div>
                     </article>
 
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2>ระบบหลังบ้าน CMS — แก้เนื้อหาเองได้โดยไม่ต้องเขียนโค้ด</h2>
+                <p class="section-sub">ออกแบบหลังบ้านให้เหมาะกับทีมที่จะใช้งานจริง พร้อมคู่มือ .pdf และอบรมทุกงาน</p>
+                <div class="cms-grid">
+                    <div class="cms-card">
+                        <b>Sanity Headless CMS</b>
+                        <span class="cms-for">สำหรับเจ้าของธุรกิจที่ต้องการแก้เองแบบฟอร์มง่ายๆ</span>
+                        <p>ตัวอย่างจริง: <b>kantawatgarden.com</b> — เจ้าของร้านแก้สินค้า บทความ แกลเลอรี เองผ่าน Studio เว็บอัปเดตเนื้อหาใหม่ภายในไม่กี่นาที</p>
+                    </div>
+                    <div class="cms-card">
+                        <b>Admin Panel พัฒนาเฉพาะงาน</b>
+                        <span class="cms-for">เมื่อธุรกิจต้องการกระบวนการ สิทธิ์ หรือข้อมูลแบบเฉพาะของตัวเอง</span>
+                        <p>ตัวอย่างจริง: <b>paopalmnursery.com</b> — จัดการสินค้า บล็อก แกลเลอรี FAQ อัปโหลดรูป export/import พร้อมคลังความรู้ที่ป้อนให้ AI แชตบอต</p>
+                    </div>
+                    <div class="cms-card">
+                        <b>WordPress สำหรับองค์กร</b>
+                        <span class="cms-for">ทีมภายในคุ้นเคย WordPress อยู่แล้ว และมีระบบเดิมต้องคงใช้</span>
+                        <p>รีดีไซน์หน้าบ้านใหม่บน WordPress เดิม ระบบสินค้า รับสมัครงาน ข่าวสาร และแบบฟอร์มเดิมใช้ต่อได้ทันที ไม่ต้องเริ่มใหม่ทั้งหมด</p>
+                    </div>
                 </div>
             </div>
         </section>
